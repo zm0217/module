@@ -1,0 +1,10 @@
+#!name= termius Premium
+#!desc= JavaScript and hostname of termius
+#!system=ios
+
+[MITM]
+hostname = %APPEND% api.termius.com
+
+[Script]
+
+termius Premium = type=http-response,pattern=https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.combyDa/Script/master/Surge/JS/Termius.js
