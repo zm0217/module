@@ -1,9 +1,0 @@
-#!name= rrtv_getall
-#!desc= Rewrite and hostname of rrtv_getall
-#!system=ios
-
-[Script]
-rrtv_getall = type=http-response,pattern=https:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll) requires-body=1,max-size=0,script-path=https://github.com/zm0217/Script/raw/master/rrtv.js
-
-[MITM]
-hostname = %APPEND% *.rr.tv
