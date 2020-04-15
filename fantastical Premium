@@ -1,9 +1,0 @@
-#!name= fantastical Premium
-#!desc= Rewrite and hostname of fantastical Premium
-#!system=ios
-
-[Script]
-fantastical Premium = type=http-response,pattern=^https:\/\/api\.flexibits\.com\/v1\/(auth|account)\/(device|details|appstore-receipt)\/$ script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/fantastical.js
-
-[MITM]
-hostname = %APPEND% api.flexibits.com
