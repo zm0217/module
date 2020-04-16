@@ -18,3 +18,6 @@
 > bilibili-check_in = type=cron,cronexp=cron "9 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js,script-update-interval=0
 
 > JD_DailyBonus = type=cron,cronexp=cron "1 0 * * *" script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,script-update-interval=0
+
+[MITM]
+hostname = %APPEND% daojia.jd.com, api.m.jd.com, *.bilibili.com, act.10010.com, m.client.10010.com, api-hdcj.9w9.com, h5.ele.me, api.rr.tv, draw.jdfcloud.com
