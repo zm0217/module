@@ -9,12 +9,6 @@
 # 浏览器登录 https://bean.m.jd.com 点击签到并且出现签到日历
 JD_DailyBonus.js = type=http-request,pattern=https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
 
-#> 爱奇艺
-iQIYI_GetCookie.js = type=http-request,pattern=https?:\/\/.*\.iqiyi\.com\/.*authcookie=,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/iQIYI-DailyBonus/iQIYI_GetCookie.js
-
-#> 哔哩哔哩漫画
-Manga.js = type=http-request,pattern=https:\/\/manga\.bilibili\.com\/.*\.User\/GetWallet,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Bilibili-DailyBonus/Manga.js
-
 #> Chayleung
 
 # > 中国联通
@@ -26,18 +20,6 @@ Manga.js = type=http-request,pattern=https:\/\/manga\.bilibili\.com\/.*\.User\/G
 
 # > 喜马拉雅
 ximalaya.cookie.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.cookie.js,type=http-request,pattern=^https?:\/\/.*\/mobile\-user\/homePage\/.*
-
-# > 什么值得买
-# 登录: https://zhiyou.smzdm.com/user/login
-# 打开浏览器访问: https://www.smzdm.com
-smzdm.cookie.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/smzdm/smzdm.cookie.js,type=http-request,pattern=^https:\/\/www\.smzdm\.com\/?.?
-
-# > 网易云音乐
-# 浏览器访问并登录: https://music.163.com/m/login
-neteasemusic.cookie.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.cookie.js,type=http-request,pattern=^https?:\/\/music\.163\.com\/?.?
-
-# > AcFun
-acfun.cookie.js = type=http-request,pattern=^https:\/\/api\-new\.app\.acfun\.cn\/rest\/app\/user\/personalInfo script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/acfun/acfun.cookie.js
 
 # > bilibili
 # 浏览器访问并登录: https://www.bilibili.com 或 https://live.bilibili.com 提示: `获取Cookie: 成功`
@@ -65,11 +47,8 @@ elemGetCookies.js = script-path=https://raw.githubusercontent.com/nzw9314/Quantu
 # 打开微信小程序 进入”活动抽奖“，手动签到一次或点击”已签到“
 WeChatLottery_new.js = script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/WeChatLottery/WeChatLottery_new.js,type=http-request,pattern=^https:\/\/api-hdcj\.9w9\.com\/v\d\/sign
 
-# > 快手极速版
-kuaishou.js = type=http-request,pattern=https:\/\/nebula\.kuaishou\.com\/rest\/n\/nebula\/activity\/earn\/overview,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/kuaishou.js
-
 # > 微信小程序 来客有礼
 lkyl.js = type=http-request,pattern=https:\/\/draw\.jdfcloud\.com\/\/api\/turncard\/sign\,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/lkyl.js
 
 [MITM]
-hostname = %APPEND% api.m.jd.com, *.iqiyi.com, manga.bilibili.com, www.smzdm.com, music.163.com, *.acfun.cn, *.bilibili.com, act.10010.com, m.client.10010.com, api-hdcj.9w9.com, h5.ele.me, api.rr.tv, i.meituan.com, promotion.waimai.meituan.com, *.video.qq.com, nebula.kuaishou.com, draw.jdfcloud.com
+hostname = %APPEND% api.m.jd.com, *.bilibili.com, act.10010.com, m.client.10010.com, api-hdcj.9w9.com, h5.ele.me, api.rr.tv, i.meituan.com, promotion.waimai.meituan.com, *.video.qq.com, draw.jdfcloud.com
