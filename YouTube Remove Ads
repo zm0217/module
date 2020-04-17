@@ -1,0 +1,10 @@
+#!name=YouTube Remove Ads
+#!desc=移除视频播放中的广告
+#!system=ios
+
+[Script]
+# > YouTube
+YouTube.js = script-path=https://Choler.github.io/Surge/Script/YouTube.js,type=http-request,pattern=^https://[\s\S]*\.googlevideo\.com/.*&(oad|ctier)
+
+[MITM]
+hostname = %APPEND% *.googlevideo.com
