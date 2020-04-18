@@ -1,14 +1,12 @@
-# Task配置
-# 修改自nzw9314
-# system=ios
+#!name=task配置（修改自nzw9314）
+#!desc=task脚本搭配get cookie使用
+#!system=ios
 
+[Script]
 # 定时脚本
 # App价格版本监控
 # 需要填appid
 cron "0 0 * * * *" script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Neurogram-R/AppMonitor.js,tag=App监控
-# > TestFlight公测监控 (By @syzzzf)
-# 需要自己填appkey
-cron "0 0 * * * *" script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/testflight.js,tag=TestFlight公测监控
 # > 一言
 cron "0 0 8 * * *" script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Meeta/Surge/Scripting/Calendar.js,tag=一言+历史上的今天
 # > 每日一句+ 蚂蚁森林收能量
@@ -66,3 +64,6 @@ cron "0 0 8 * * *" script-path=https://raw.githubusercontent.com/zZPiglet/Task/m
 # 微信小程序-喜马拉雅 (By @makexp)
 # 微信小程序 - 喜马拉雅 - 我的： 签到 “ 获取 Cookie
 cron "0 0 8 * * *" script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/xmly_wc.js,tag=微信小程序-喜马拉雅
+
+[MITM]
+hostname = %APPEND% api.m.jd.com, act.10010.com, m.client.10010.com, *.bilibili.com, *.rr.tv, mobwsa.ximalaya.com, h5.ele.me, daojia.jd.com, api-hdcj.9w9.com, draw.jdfcloud.com, promotion.waimai.meituan.com, m.ximalaya.com,  mcs-mimp-web.sf-express.com,
