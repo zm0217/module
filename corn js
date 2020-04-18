@@ -3,21 +3,32 @@
 #!system=ios
 
 [Script]
-> jddj = type=cron,cronexp=cron "10 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/jddj/jddj.js
+# > JD-DailyBonus
+cron "1 0 * * *" script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
 
-> WeChatLottery = type=cron,cronexp=cron "7 0 * * *" script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/WeChatLottery/WeChatLottery_new.js
+# > bilibili-check_in
+cron "9 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js
 
-> 10010-check_in = type=cron,cronexp=cron "8 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.js
+# > renren-check_in
+cron "6 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/rrtv/rrtv.js
 
-> elm-check_in = type=cron,cronexp=cron "5 0 * * *" script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/elemSign.js
+# > ximalaya-check_in
+cron "10 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.js
 
-> ximalaya-check_in = type=cron,cronexp=cron "6 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.js
+# > elm-check_in
+cron "0 5 0 * * *" script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/elemSign.js
 
-> renren-check_in = type=cron,cronexp=cron "6 0 * * *" script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/elemGetCookies.js
+# > 10010-check_in
+cron "8 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.js
 
-> bilibili-check_in = type=cron,cronexp=cron "9 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js
+# > jddj
+cron "10 0 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/jddj/jddj.js
 
-> JD_DailyBonus = type=cron,cronexp=cron "1 0 * * *" script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+# > WeChatLottery
+cron "1 0 * * *" script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/WeChatLottery/WeChatLottery_new.js
+
+# > lkyl
+cron "0 9 * * *" script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/lkyl.js
 
 [MITM]
-hostname = %APPEND% daojia.jd.com, api.m.jd.com, *.bilibili.com, act.10010.com, m.client.10010.com, api-hdcj.9w9.com, h5.ele.me, api.rr.tv, draw.jdfcloud.com
+hostname = %APPEND% daojia.jd.com, api.m.jd.com, mobwsa.ximalaya.com, *.bilibili.com, act.10010.com, m.client.10010.com, api-hdcj.9w9.com, h5.ele.me, api.rr.tv, draw.jdfcloud.com
