@@ -57,9 +57,6 @@ cron "0 0 8 * * *" script-path=https://raw.githubusercontent.com/nzw9314/Quantum
 #打开微信小程序 进入“活动抽奖”，手动签到一次或点击“已签到”
 cron "0 0 8 * * *" script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/WeChatLottery/WeChatLottery_new.js,tag=微信小程序-活动抽奖
 
-# 微信小程序-喜马拉雅 (By @makexp)
-# 微信小程序 - 喜马拉雅 - 我的： 签到 “ 获取 Cookie
-cron "0 0 8 * * *" script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/xmly_wc.js,tag=微信小程序-喜马拉雅
 
 [MITM]
-hostname = %APPEND% api.m.jd.com, act.10010.com, m.client.10010.com, *.bilibili.com, *.rr.tv, mobwsa.ximalaya.com, h5.ele.me, daojia.jd.com, api-hdcj.9w9.com, draw.jdfcloud.com, m.ximalaya.com, mcs-mimp-web.sf-express.com,
+hostname = %APPEND% api.m.jd.com, act.10010.com, m.client.10010.com, *.bilibili.com, *.rr.tv, mobwsa.ximalaya.com, h5.ele.me, daojia.jd.com, api-hdcj.9w9.com, draw.jdfcloud.com, mcs-mimp-web.sf-express.com,
