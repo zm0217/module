@@ -1,5 +1,5 @@
-#!name=Q-Search
-#!desc=Safari Search Add-ons by Neurogram
+#!name=Q-Search-自用版本
+#!desc=Safari Search 修改自——Neurogram
 
 [URL Rewrite]
 ^https:\/\/duckduckgo.com\/\?q=bd\+([^&]+).+ https://www.baidu.com/s?wd=$1 302
