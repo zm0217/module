@@ -1,5 +1,6 @@
 #!name=Q-Search-自用版本
 #!desc=Safari Search 修改自——Neurogram
+#!system=mac
 
 [URL Rewrite]
 ^https:\/\/duckduckgo.com\/\?q=bd\+([^&]+).+ https://www.baidu.com/s?wd=$1 302
