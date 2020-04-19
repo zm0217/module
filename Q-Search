@@ -14,13 +14,13 @@
 ^https:\/\/duckduckgo.com\/\?q=bl\+([^&]+).+ https://search.bilibili.com/all?keyword=$1 302
 # Pinterest
 ^https:\/\/duckduckgo.com\/\?q=pt\+([^&]+).+ http://www.pinterest.com/search/pins/?q=$1 302
-#gcores
+# gcores
 ^https:\/\/duckduckgo.com\/\?q=gc\+([^&]+).+ https://www.gcores.com/search?keyword=$1 302
-# sof  (Stack Overflow)
-^https:\/\/duckduckgo.com\/\?q=sof\+([^&]+).+ https://stackoverflow.com/search?q=$1 302
-# se  (StackExchange)
+# Stack Overflow
+^https:\/\/duckduckgo.com\/\?q=so\+([^&]+).+ https://stackoverflow.com/search?q=$1 302
+# StackExchange
 ^https:\/\/duckduckgo.com\/\?q=se\+([^&]+).+ https://stackexchange.com/search?q=$1 302
-# wa  (WolframAlpha)
+# WolframAlpha
 ^https:\/\/duckduckgo.com\/\?q=wa\+([^&]+).+ https://www.wolframalpha.com/input/?i=$1 302
 
 # > 翻译
@@ -45,10 +45,6 @@
 ^https:\/\/duckduckgo.com\/\?q=ddg\+([^&]+).+ https://duckduckgo.com/?ia=about&q=$1 302
 # Google
 ^https:\/\/duckduckgo.com\/\?q=([^&]+).+ https://www.google.com/search?q=$1 302
-#
-^https:\/\/duckduckgo.com\/\?q=jd\+([^&]+).+ https://so.m.jd.com/ware/search.action?keyword=$1 302
-#
-^https:\/\/duckduckgo.com\/\?q=tb\+([^&]+).+ https://s.m.taobao.com/h5?q=$1 302
 
 [MITM]
 hostname = %APPEND% duckduckgo.com
