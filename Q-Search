@@ -49,19 +49,17 @@
 ^https:\/\/duckduckgo.com\/\?q=([^&]+).+ https://www.google.com/search?q=$1 302
 
 # zdm: 什么值得买
-^https:\/\/duckduckgo.com\/\?q=zdm\+([^&]+).+ https://search.m.smzdm.com/?v=b&s=$1 302
+^https:\/\/duckduckgo.com\/\?q=zdm\+([^&]+).+ https://search.smzdm.com/?c=home&s=$1 302
 # amz: 亚马逊
-^https:\/\/duckduckgo.com\/\?q=amz\+([^&]+).+ https://www.amazon.cn/gp/aw/s/?k=$1 302
+^https:\/\/duckduckgo.com\/\?q=amz\+([^&]+).+ https://www.amazon.cn/s?k=$1 302
 # jd : 京东
 ^https:\/\/duckduckgo.com\/\?q=jd\+([^&]+).+ https://so.m.jd.com/ware/search.action?keyword=$1 302
 # tb: 淘宝
-^https:\/\/duckduckgo.com\/\?q=tb\+([^&]+).+ https://s.m.taobao.com/h5?q=$1 302
+^https:\/\/duckduckgo.com\/\?q=tb\+([^&]+).+ https://s.taobao.com/search?=$1 302
 # tm: 天猫
-^https:\/\/duckduckgo.com\/\?q=tm\+([^&]+).+ https://s.m.tmall.com/m/search.htm?q=$1 302
+^https:\/\/duckduckgo.com\/\?q=tm\+([^&]+).+ https://list.tmall.com/search_product.htm?q=$1 302
 # rd  (Reddit)
 ^https:\/\/duckduckgo.com\/\?q=rd\+([^&]+).+ https://www.reddit.com/search?q=$1 302
-# tw (Twitter)
-^https:\/\/duckduckgo.com\/\?q=tw\+([^&]+).+ https://twitter.com/search?q=$1 302
 
 [MITM]
 hostname = %APPEND% duckduckgo.com
