@@ -48,7 +48,7 @@
 #
 ^https:\/\/duckduckgo.com\/\?q=jd\+([^&]+).+ https://so.m.jd.com/ware/search.action?keyword=$1 302
 #
-^https:\/\/duckduckgo.com\/\?q=tb\+([^&]+).+ https://s.taobao.com/search?q=$1 302
+^https:\/\/duckduckgo.com\/\?q=tb\+([^&]+).+ https://s.m.taobao.com/h5?q=$1 302
 
 [MITM]
 hostname = %APPEND% duckduckgo.com
