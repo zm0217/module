@@ -52,5 +52,3 @@
 
 [MITM]
 hostname = %APPEND% duckduckgo.com
-
-^https:\/\/duckduckgo.com\/\?q=wkz\+([^&]+).+ https://zh.wikipedia.org/w/index.php?search=$1 302
