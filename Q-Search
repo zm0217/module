@@ -22,26 +22,23 @@
 ^https:\/\/duckduckgo.com\/\?q=se\+([^&]+).+ https://stackexchange.com/search?q=$1 302
 # WolframAlpha
 ^https:\/\/duckduckgo.com\/\?q=wa\+([^&]+).+ https://www.wolframalpha.com/input/?i=$1 302
-
-# > 翻译
-# yd   (有道)
+# 有道
 ^https:\/\/duckduckgo.com\/\?q=yd\+([^&]+).+ http://dict.youdao.com/search?q=$1 302
-# gtc  (Google 译至中)
+# Googletranslate 译至中
 ^https:\/\/duckduckgo.com\/\?q=gtc\+([^&]+).+ https://translate.google.com/#view=home&op=translate&sl=auto&tl=zh-CN&text=$1 302
-# gte  (Google 译至英)
+# Googletranslate 译至英
 ^https:\/\/duckduckgo.com\/\?q=gte\+([^&]+).+ https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=$1 302
-# gtj  (Google 译至日)
+# Googletranslate 译至日
 ^https:\/\/duckduckgo.com\/\?q=gtj\+([^&]+).+ https://translate.google.com/#view=home&op=translate&sl=auto&tl=ja&text=$1 302
-
 # 维基百科中文
 ^https:\/\/duckduckgo.com\/\?q=wke\+([^&]+).+ https://en.wikipedia.org/w/index.php?search=$1 302
 # 维基百科英文
 ^https:\/\/duckduckgo.com\/\?q=wkz\+([^&]+).+ https://zh.wikipedia.org/w/index.php?search=$1 302
-# bi: 必应
+# bing
 ^https:\/\/duckduckgo.com\/\?q=bi\+([^&]+).+ https://cn.bing.com/search?q=$1 302
-# bd: 百度
+# 百度
 ^https:\/\/duckduckgo.com\/\?q=bd\+([^&]+).+ https://www.baidu.com/s?wd=$1 302
-# ddg: DuckDuckGo 
+# DuckDuckGo 
 ^https:\/\/duckduckgo.com\/\?q=ddg\+([^&]+).+ https://duckduckgo.com/?ia=about&q=$1 302
 # Google
 ^https:\/\/duckduckgo.com\/\?q=([^&]+).+ https://www.google.com/search?q=$1 302
