@@ -1,0 +1,9 @@
+#!name=fantastical 3 解锁
+#!desc=测试
+
+[Script]
+# > Fantastical 内购解锁 (By @sunshy)
+fantastical.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/fantastical.js,type=http-response,pattern=^https:\/\/api\.flexibits\.com\/v1\/(auth|account)\/(device|details|appstore-receipt)\/$
+
+[MITM]
+hostname = %APPEND% api.flexibits.com
