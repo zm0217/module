@@ -41,6 +41,9 @@ musixmatch.miao.js = requires-body=1,max-size=0,script-path=https://raw.githubus
 Lightroom.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/Lightroom.js,script-update-interval=0,type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v2\/accounts
 # > Pdfexpert
 Pdfexpert.vip.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/Pdfexpert.vip.js,script-update-interval=0,type=http-response,pattern=^https:\/\/license\.pdfexpert\.com\/api\/.+\/subscription\/(refresh$|check$)
+# > 
+http-request ^https:\/\/sk\.ulysses\.app\/api\/v1\/user_offers$ script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/cleancacheulysses.js
+http-response ^https:\/\/sk\.ulysses\.app\/api\/v1\/itunes_receipt_verify$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/ulysses.js
 
 [MITM]
-hostname = %APPEND% trade-acs.m.taobao.com, api.m.jd.com, ios.prod.ftl.netflix.com, api.rr.tv, api.flexibits.com, api.vuevideo.net, api.termius.com, api.gyrosco.pe, ap*.intsig.net, backend.getdrafts.com, lcs-mobile-cops.adobe.io, education.github.com,  photos.adobe.io, license.pdfexpert.com, apic.musixmatch.com, ctrl.playcvn.com, bea.sportq.com, 
+hostname = %APPEND% trade-acs.m.taobao.com, api.m.jd.com, ios.prod.ftl.netflix.com, api.rr.tv, api.flexibits.com, api.vuevideo.net, api.termius.com, api.gyrosco.pe, ap*.intsig.net, backend.getdrafts.com, lcs-mobile-cops.adobe.io, education.github.com,  photos.adobe.io, license.pdfexpert.com, apic.musixmatch.com, ctrl.playcvn.com, bea.sportq.com, sk.ulysses.app
