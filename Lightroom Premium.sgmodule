@@ -1,6 +1,5 @@
 #!name= Lightroom Premium
 #!desc= JavaScript and hostname of Lightroom
-#!system=ios
 
 [MITM]
 hostname = %APPEND% photos.adobe.io
