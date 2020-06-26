@@ -3,8 +3,6 @@
 #!system=ios
 
 # Task配置 By nzw9314
-# GitHub主页(https://github.com/nzw9314)
-# TG通知频道 (https://t.me/nzw9314News)
 # 定时脚本
 
 [Script]
@@ -35,10 +33,6 @@ JD_DailyBonus.js = type=cron,cronexp=0 0 0 * * *,script-path=https://raw.githubu
 # 打开 APP, 访问下`我的顺丰` > `去签到` (访问下`去签到`的页面即可, 不用点`签到`)
 # 打开 APP或小程序, 访问下`27周年庆`
 sfexpress.js = type=cron,cronexp=20 1 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.js,script-update-interval=0
-
-# V2EX
-# 浏览器打开https://www.v2ex.com/mission/daily ，待弹出获取成功即可
-v2ex.js = type=cron,cronexp=30 1 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/v2ex/quanx/v2ex.js,script-update-interval=0
 
 # 喜马拉雅
 # 打开 APP, 访问下右下角`账号`
