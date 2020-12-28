@@ -1,0 +1,10 @@
+#!name=WEATHER AQI-US
+#!desc=AQI-US
+
+
+[Script]
+# > AQI-US
+AQI-US.js = type=http-response, pattern=https://weather-data.apple.com/v1/weather/[\w-]+/[0-9]+\.[0-9]+/[0-9]+\.[0-9]+\?include=, requires-body=true, script-path=https://raw.githubusercontent.com/zm0217/Script/master/AQI-US.js
+
+[MITM]
+hostname = %APPEND% weather-data.apple.com
