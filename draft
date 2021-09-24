@@ -3,7 +3,7 @@
 
 [Script]
 # > draft
-draft.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/draft.js,script-update-interval=0,type=http-response,pattern=^https:\/\/backend\.getdrafts\.com\/api\/.*\/verification
+draft.js = requires-body=1,max-size=0,script-path=https://github.com/zm0217/Script/blob/master/draft.js,script-update-interval=0,type=http-response,pattern=^https:\/\/backend\.getdrafts\.com\/api\/.*\/verification
 
 [MITM]
 hostname = %APPEND% backend.getdrafts.com
