@@ -1,0 +1,10 @@
+#!name=vsco unlock
+#!desc=测试
+
+[Script]
+# > ulysses unlock
+ulysses.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js,type=http-response,pattern=^https:\/\/(api\.revenuecat\.com\/v\d\/subscribers|vsco\.co\/api\/subscriptions\/\d\.\d\/user-subscriptions)\/ url script-response-body ,script-path=vsco.js
+
+
+[MITM]
+hostname = vsco.co, api.revenuecat.com
