@@ -129,3 +129,68 @@ hostname = %APPEND% api.vistopia.com.cn
 [MITM]
 hostname= %APPEND% api.revenuecat.com
 
+#!name=白描
+#!desc=白描黄金会员
+#!homepage=https://github.com/deezertidal
+#!author= iEwha
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/baimiao.png
+
+
+
+[MITM]
+hostname = %APPEND% baimiao.uzero.cn
+
+[Script]
+白描=type=http-response,pattern=^https?:\/\/baimiao\.uzero\.cn\/api\/v\d\.user\/appLaunchWithUser$,requires-body=1,script-path=https://raw.githubusercontent.com/iEwha/Profiles/master/Script/baimiao.js
+
+#!name=BoxJs
+#!desc=http://boxjs.com
+
+[General]
+force-http-engine-hosts = %APPEND% boxjs.com, boxjs.net
+
+[Script]
+Rewrite: BoxJs = type=http-request,pattern=https?:\/\/boxjs\.(com|net),script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js, requires-body=true, timeout=120
+
+#!name=Fantastical
+#!desc=Fantastical解锁会员
+#!homepage=https://github.com/deezertidal
+#!author=ddgksf2013
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/fantastical.png
+[MITM]
+hostname = %APPEND% api.flexibits.com
+[Script]
+Fantastical=type=http-response,pattern=^https:\/\/api\.flexibits\.com\/(v1\/auth\/device|v1\/account\/details),requires-body=1,script-path=https://raw.githubusercontent.com/deezertidal/private/master/js-backup/Crack/fantastical.js
+
+#!name=IMuseum
+#!desc=IMuseum会员解锁
+#!homepage=https://github.com/deezertidal
+#!author=Marol62926
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/imuseum.png
+[Script]
+IMuseum=type=http-response,pattern=https://icity-imsm.2q10.com/api/v1/users/mark_paid,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/imuseum.js,requires-body=1,max-size=0
+[MITM]
+hostname = %APPEND% icity-imsm.2q10.com
+
+#!name=Pandora订阅管理
+#!desc=Pandora订阅管理会员
+#!author=89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/pandora.png
+#!homepage=https://github.com/deezertidal
+
+[Script]
+Pandora订阅管理=type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Pandora.js
+
+[mitm]
+hostname= %APPEND% buy.itunes.apple.com
+
+#!name=PDF Viewer
+#!desc=PDF Viewer解锁会员
+#!homepage=https://github.com/deezertidal
+#!author= 89996462
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/pdfviewer.png
+[MITM]
+hostname = %APPEND% api.revenuecat.com
+[Script]
+PDF Viewer=type=http-response,pattern=^https:\/\/api\.revenuecat\.com\/v1\/subscribers.+,requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/PDFViewer.js
+
