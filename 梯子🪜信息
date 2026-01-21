@@ -4,7 +4,7 @@ Surge配置参考注释，感谢@asukanana,感谢@congcong.
 示例↓↓↓ 
 ----------------------------------------
 [Script]
-Sub_info = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/chaizia/Profiles/master/MySurge/sub_info_panel.js,script-update-interval=0,argument=url=https%3A%2F%2Ffcsblka.fcsubcn.cc%3A2096%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D6e9174a15c8900b308972d5a69a1eff8&reset_day=1&title=AmyInfo&icon=bonjour&color=#007aff
+Sub_info = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/chaizia/Profiles/master/MySurge/sub_info_panel.js,script-update-interval=0,argument=url=[https%3A%2F%2Ffcsblka.fcsubcn.cc%3A2096%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D6e9174a15c8900b308972d5a69a1eff8]&reset_day=1&title=AmyInfo&icon=bonjour&color=#007aff
 
 [Panel]
 Sub_info = script-name=Sub_info,update-interval=86400
