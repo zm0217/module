@@ -1,0 +1,11 @@
+#!name=iTunes系列解锁
+#!desc=自动查询 App 内购产品并注入最贵套餐凭证，可在设置中关闭。
+#!category=通杀脚本
+#!arguments=Mock:"https://reven.lovebabyforever.workers.dev/reven",Enabled:"true",Expires:"2099-09-09",Country:"HK"
+#!arguments-desc=Mock:\nReven 网关地址，一般无需修改。\nEnabled:\n是否启用解锁。\ntrue = 拦截 verifyReceipt 并注入订阅凭证\nfalse = 不修改响应，直接放行\nExpires:\n订阅到期日期，格式 YYYY-MM-DD，默认 2099-09-09。\nCountry:\n查询内购产品的 App Store 区域代码，默认 HK。
+
+[URL Rewrite]
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt {{{Mock}}}/buy.itunes.apple.com/verifyReceipt?enabled={{{Enabled}}}&expires={{{Expires}}}&country={{{Country}}} header
+
+[MITM]
+hostname = %APPEND% buy.itunes.apple.com
