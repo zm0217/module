@@ -2,7 +2,7 @@
 #!desc=直接复制机场订阅地址进去就行
 #!category=iBL3ND
 
-#!arguments=A_name:Ytoo,A_url:https://api.oxycontinin.com/osubscribe.php?sid=141954&token=wRxzktVFKF9DN1SEzx4W,A_reset:19,B_name:订阅B名称,B_url:订阅B地址,B_reset:重置日,C_name:订阅C名称,C_url:订阅C地址,C_reset:重置日,D_name:订阅D名称,D_url:订阅D地址,D_reset:重置日,E_name:订阅E名称,E_url:订阅E地址,E_reset:重置日
+#!arguments=A_name:Ytoo,A_url:https://735aa828cdfb.qtt-163cdn.com/sub?target=surge&ver=4&surge.doh=true&emoji=false&tfo=false&udp=true&scv=true&filename=YToo_Trojan&url=https%3A%2F%2Fapi.ytoo.xyz%2Fosubscribe.php%3Fsid%3D141954%26token%3DwRxzktVFKF9DN1SEzx4W,A_reset:19,B_name:订阅B名称,B_url:订阅B地址,B_reset:重置日,C_name:订阅C名称,C_url:订阅C地址,C_reset:重置日,D_name:订阅D名称,D_url:订阅D地址,D_reset:重置日,E_name:订阅E名称,E_url:订阅E地址,E_reset:重置日
 
 #!arguments-desc=【参数设置说明】\n① A~E分别对应不同订阅\n② 可同时显示5个订阅流量信息\n③ 直接填订阅地址即可使用-无需编码
 
